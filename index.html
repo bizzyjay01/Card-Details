@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+     <head>
+          <meta charset="UTF-8" />
+          <meta
+               name="viewport"
+               content="width=device-width, initial-scale=1.0"
+          />
+          <!-- displays site properly based on user's device -->
+
+          <link
+               rel="icon"
+               type="image/png"
+               sizes="32x32"
+               href="./images/favicon-32x32.png"
+          />
+
+          <title>Frontend Mentor | Interactive card details form</title>
+
+          <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+          <style>
+               .attribution {
+                    font-size: 11px;
+                    text-align: center;
+               }
+               .attribution a {
+                    color: hsl(228, 45%, 44%);
+               }
+          </style>
+
+          <link
+               rel="stylesheet"
+               href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+               integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+               crossorigin="anonymous"
+          />
+          <link
+               rel="stylesheet"
+               href="(https://fonts.google.com/specimen/Space+Grotesk)"
+          />
+
+          <link rel="stylesheet" href="app.css" />
+     </head>
+     <body>
+          <div class="container-fluid">
+               <div class="row align-items-center main-container">
+                    <div
+                         class="bg-main-desktop"
+                         style="width: 25%; height: 100vh"
+                    >
+                         <img
+                              src="images/bg-main-desktop.png"
+                              alt=""
+                              class="bg-img w-100 h-100"
+                         />
+                    </div>
+
+                    <section
+                         class="card-display position-relative"
+                         style="width: 25%"
+                    >
+                         <div class="card-front">
+                              <img
+                                   src="images/bg-card-front.png"
+                                   alt=""
+                                   class="card-front-img w-100 img-fluid"
+                              />
+                              <img
+                                   src="images/card-logo.svg"
+                                   alt=""
+                                   class="card-logo"
+                              />
+
+                              <p class="card-number-display">
+                                   0000 0000 0000 0000
+                              </p>
+                              <p class="cardholder-display">Bisola John</p>
+                              <p class="expiry-month-display">04/22</p>
+                         </div>
+
+                         <div class="card-back">
+                              <img
+                                   src="images/bg-card-back.png"
+                                   alt=""
+                                   class="card-back-img w-100"
+                              />
+                              <p class="cvc-display">124</p>
+                         </div>
+                    </section>
+
+                    <form class="row g-3">
+                         <div class="col-12">
+                              <label for="inputName" class="form-label"
+                                   >CARDHOLDER NAME</label
+                              >
+                              <input
+                                   type="text"
+                                   class="form-control"
+                                   id="inputNName"
+                                   placeholder="e.g John Snow"
+                              />
+                         </div>
+                         <div class="col-12 mt-5">
+                              <label for="inputNumber" class="form-label"
+                                   >CARD NUMBER</label
+                              >
+                              <input
+                                   type="text"
+                                   class="form-control"
+                                   id="inputNumber"
+                                   placeholder="0000 0000 0000 0000"
+                              />
+                         </div>
+
+                         <div class="col-xl-6 mt-5">
+                              <label for="inputExpiry" class="form-label"
+                                   >EXP. DATE (MM/YY)</label
+                              >
+                              <div class="row ml-1">
+                                   <input
+                                        type="text"
+                                        class="form-control col-5"
+                                        id="inputExpiry"
+                                        placeholder="MM"
+                                   />
+
+                                   <input
+                                        type="text"
+                                        class="form-control col-5 ml-2"
+                                        id="inputExpiry-year"
+                                        placeholder="YY"
+                                   />
+                              </div>
+                         </div>
+
+                         <div class="col-xl-6 mt-5">
+                              <label for="inputCVC" class="form-label"
+                                   >CVC</label
+                              >
+
+                              <input
+                                   type="text"
+                                   class="form-control"
+                                   id="inputCVC"
+                                   placeholder="123"
+                              />
+                         </div>
+                         <div class="col-12">
+                              <button type="submit" class="btn btn-primary mt-5" style="width: 100%; font-size: 30px; background-color: hsl(278, 68%, 11%); border-radius: 0.7rem; padding-top: 20px; padding-bottom: 20px;">
+                                   Confirm
+                              </button>
+                         </div>
+                    </form>
+               </div>
+          </div>
+
+          <!-- 0000 0000 0000 0000 Jane Appleseed 00/00 000 Cardholder Name e.g. Jane
+    Appleseed Card Number e.g. 1234 5678 9123 0000 Exp. Date (MM/YY) MM YY CVC
+    e.g. 123 Confirm -->
+
+          <!-- Completed state start -->
+
+          <!-- Thank you! We've added your card details Continue -->
+          <!--   
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+
+          <script
+               src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+               integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+               crossorigin="anonymous"
+          ></script>
+          <script
+               src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+               integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+               crossorigin="anonymous"
+          ></script>
+          <script
+               src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+               integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+               crossorigin="anonymous"
+          ></script>
+     </body>
+</html>

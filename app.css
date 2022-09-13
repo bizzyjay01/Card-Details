@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500&display=swap');
+
+
+
+
+
+body {
+    font-family: 'space grotesk', sans-serif;
+    height: 100vh;
+   
+}
+
+/* .card-display {
+    position: relative;
+} */
+
+
+.card-front {
+    position: relative;
+    right: 300px;
+    bottom: 30px;
+    color: hsl(0, 0%, 100%);
+    z-index: 1;
+   
+}
+
+/* .card-front-img {
+    position: absolute;
+    z-index: -1;
+   
+} */
+
+
+
+
+.card-logo {
+    position: absolute;
+    width: 20%;
+    top: 25px;
+    left: 25px;
+}
+
+.card-number-display {
+    
+        width: 100%;
+        text-align: center;
+        height: 0;
+        font-size: 1.4rem;
+        line-height: 0;
+        color: white;
+        position: absolute;
+        bottom: 40%;
+        letter-spacing: 5px;
+      
+    }
+    
+.cardholder-display {
+    position: absolute;
+    bottom: 10%;
+    font-size: 1rem;
+    left: 10%;
+    text-transform: uppercase;
+}
+
+.expiry-month-display {
+    position: absolute;
+        bottom: 10%;
+        font-size: 1rem;
+        left: 75%;
+}
+
+.card-back {
+    position: relative;
+    
+    right: 200px;
+    
+    color: hsl(0, 0%, 100%);
+
+}
+
+.cvc-display {
+    position: absolute;
+    bottom: 39%;
+    left: 80%;
+    font-size: 1.2rem;
+}
+
+
+label {
+    font-size: 1.5rem;
+    max-width: 100%;
+    color: hsl(278, 68%, 11%);
+}
+
+input::-webkit-input-placeholder {
+    font-size: 30px;
+    line-height: 3;
+}
+
+form {
+    width: 25%;
+}
+.form-control {
+    height: 70px;
+}
+
+.form-label {
+    font-size: 2rem;
+}
+
+
+
+
+@media (max-width:1500px) {
+    .main-container {
+        flex-direction: column;
+        
+        
+    }
+
+    .bg-main-desktop {
+        min-width: 100%;
+        max-height: 20vh;
+       
+} 
+
+input::-webkit-input-placeholder {
+    font-size: 20px;
+    line-height: 3;
+}
+form {
+    width: 80%;
+}
+
+
+}
+
+
+
+
